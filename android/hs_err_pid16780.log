@@ -1,0 +1,227 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes. Error detail: AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:44), pid=16780, tid=4992
+#
+# JRE version:  (17.0.11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.11+0--11852314, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dorg.gradle.appname=gradlew org.gradle.wrapper.GradleWrapperMain -q -Ptarget-platform=android-arm -Ptarget=C:\Users\jananirangisiri\Downloads\Final\bika\lib\main.dart -Pbase-application-name=android.app.Application -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+
+Host: AMD Ryzen 5 5500U with Radeon Graphics         , 12 cores, 5G,  Windows 11 , 64 bit Build 22621 (10.0.22621.4391)
+Time: Thu Dec  5 14:15:01 2024 Sri Lanka Standard Time elapsed time: 0.028022 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001c063210a70):  JavaThread "Unknown thread" [_thread_in_vm, id=4992, stack(0x0000007c22400000,0x0000007c22500000)]
+
+Stack: [0x0000007c22400000,0x0000007c22500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x687bb9]
+V  [jvm.dll+0x84142a]
+V  [jvm.dll+0x8430ae]
+V  [jvm.dll+0x843713]
+V  [jvm.dll+0x24a35f]
+V  [jvm.dll+0xa6cc3]
+V  [jvm.dll+0x2dc984]
+V  [jvm.dll+0x811eec]
+V  [jvm.dll+0x36fb68]
+V  [jvm.dll+0x7f0896]
+V  [jvm.dll+0x3f3d2f]
+V  [jvm.dll+0x3f58e1]
+C  [jli.dll+0x528f]
+C  [ucrtbase.dll+0x29333]
+C  [KERNEL32.DLL+0x1259d]
+C  [ntdll.dll+0x5af38]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffe708fefd8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000001c063210a70 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4992, stack(0x0000007c22400000,0x0000007c22500000)]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000000000000, size: 0 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.017 Loaded shared library C:\Program Files\Android\Android Studio\jbr\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff732ab0000 - 0x00007ff732aba000 	C:\Program Files\Android\Android Studio\jbr\bin\java.exe
+0x00007fff3cbb0000 - 0x00007fff3cdc7000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff3bc10000 - 0x00007fff3bcd4000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff3a500000 - 0x00007fff3a8ba000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff3a1c0000 - 0x00007fff3a2d1000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fff319a0000 - 0x00007fff319bb000 	C:\Program Files\Android\Android Studio\jbr\bin\VCRUNTIME140.dll
+0x00007ffee9190000 - 0x00007ffee91a7000 	C:\Program Files\Android\Android Studio\jbr\bin\jli.dll
+0x00007fff3c4c0000 - 0x00007fff3c66e000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff3a0c0000 - 0x00007fff3a0e6000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff1ba60000 - 0x00007fff1bcf2000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4541_none_2710d1c57384c085\COMCTL32.dll
+0x00007fff3bad0000 - 0x00007fff3baf9000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff3a2e0000 - 0x00007fff3a3fb000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff3c410000 - 0x00007fff3c4b7000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff3a0f0000 - 0x00007fff3a18a000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fff3bbc0000 - 0x00007fff3bbf1000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fff312c0000 - 0x00007fff312cc000 	C:\Program Files\Android\Android Studio\jbr\bin\vcruntime140_1.dll
+0x00007fff29b20000 - 0x00007fff29bad000 	C:\Program Files\Android\Android Studio\jbr\bin\msvcp140.dll
+0x00007ffe6fdc0000 - 0x00007ffe70a43000 	C:\Program Files\Android\Android Studio\jbr\bin\server\jvm.dll
+0x00007fff3ba10000 - 0x00007fff3bac2000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff3bb10000 - 0x00007fff3bbb7000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff3a190000 - 0x00007fff3a1b8000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007fff3c790000 - 0x00007fff3c8a4000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff327f0000 - 0x00007fff327f9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff35930000 - 0x00007fff35964000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff39d70000 - 0x00007fff39dbd000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007fff3b990000 - 0x00007fff3ba01000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fff31140000 - 0x00007fff3114a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff39d40000 - 0x00007fff39d53000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007fff38ed0000 - 0x00007fff38ee8000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fff29be0000 - 0x00007fff29bea000 	C:\Program Files\Android\Android Studio\jbr\bin\jimage.dll
+0x00007fff377f0000 - 0x00007fff37a22000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fff3c020000 - 0x00007fff3c3af000 	C:\WINDOWS\System32\combase.dll
+0x00007fff3ca80000 - 0x00007fff3cb57000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007fff32550000 - 0x00007fff32582000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fff3a480000 - 0x00007fff3a4fb000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fff29bb0000 - 0x00007fff29bd5000 	C:\Program Files\Android\Android Studio\jbr\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Android\Android Studio\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.4541_none_2710d1c57384c085;C:\Program Files\Android\Android Studio\jbr\bin\server
+
+VM Arguments:
+jvm_args: -Dorg.gradle.appname=gradlew 
+java_command: org.gradle.wrapper.GradleWrapperMain -q -Ptarget-platform=android-arm -Ptarget=C:\Users\jananirangisiri\Downloads\Final\bika\lib\main.dart -Pbase-application-name=android.app.Application -Pdart-obfuscation=false -Ptrack-widget-creation=true -Ptree-shake-icons=false -Pfilesystem-scheme=org-dartlang-root assembleDebug
+java_class_path (initial): C:\Users\jananirangisiri\Downloads\Final\bika\android\\gradle\wrapper\gradle-wrapper.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 98566144                                  {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1574961152                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1574961152                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Android\Android Studio\jbr
+CLASSPATH=C:\Users\jananirangisiri\Downloads\Final\bika\android\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\Program Files\Android\Android Studio\jbr\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\nodejs\;C:\Users\jananirangisiri\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jananirangisiri\AppData\Local\Programs\Python\Python312\;C:\Users\jananirangisiri\AppData\Local\Programs\Python\Launcher\;C:\Users\jananirangisiri\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk1.8.0_51\bin;C:\Users\jananirangisiri\AppData\Local\JetBrains\IntelliJ IDEA 2023.2.1\bin;;C:\Users\jananirangisiri\.dotnet\tools;C:\Users\jananirangisiri\Desktop\Flutter\bin;C:\Users\jananirangisiri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jananirangisiri\AppData\Roaming\npm;C:\Users\jananirangisiri\Desktop\Flutter\bin\mingit\cmd;C:\Users\jananirangisiri\Desktop\Flutter\bin\mingit\cmd
+USERNAME=jananirangisiri
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD
+TMP=C:\Users\JANANI~1\AppData\Local\Temp
+TEMP=C:\Users\JANANI~1\AppData\Local\Temp
+
+
+
+Periodic native trim disabled
+
+JNI global refs:
+JNI global refs: 0, weak refs: 0
+
+JNI global refs memory usage: 0, weak refs: 0
+
+Process memory usage:
+Resident Set Size: 11028K (0% of 6149880K total physical memory with 472360K free physical memory)
+
+OOME stack traces (most recent first):
+Classloader memory used:
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.4391)
+OS uptime: 12 days 13:07 hours
+
+CPU: total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 23 model 104 stepping 1 microcode 0x0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt
+Processor Information for all 12 processors :
+  Max Mhz: 2100, Current Mhz: 2100, Mhz Limit: 2100
+
+Memory: 4k page, system-wide physical 6005M (461M free)
+TotalPageFile size 24437M (AvailPageFile size 4M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 11M, peak: 12M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.11+0--11852314) for windows-amd64 JRE (17.0.11+0--11852314), built on May 16 2024 21:29:20 by "androidbuild" with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.

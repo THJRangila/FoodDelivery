@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "172572296736",
+    "project_id": "bika-1b471",
+    "storage_bucket": "bika-1b471.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172572296736:android:6f656922551bfc43dd9e45",
+        "android_client_info": {
+          "package_name": "com.example.bika_online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172572296736-vik7db92ssoneodk0fafecrb7j1tn24f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPIdfKok0XMSVF-wroXJVIHcygHAmuX_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172572296736-vik7db92ssoneodk0fafecrb7j1tn24f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172572296736:android:c3c2ecc02810d269dd9e45",
+        "android_client_info": {
+          "package_name": "com.example.food_app_flutter_main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172572296736-vik7db92ssoneodk0fafecrb7j1tn24f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPIdfKok0XMSVF-wroXJVIHcygHAmuX_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172572296736-vik7db92ssoneodk0fafecrb7j1tn24f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
